@@ -13,7 +13,7 @@ def processar_mensagem(mensagem):
     if match:
         valor = float(match.group(1).replace(",", "."))
         descricao = f"Compra na {match.group(2).strip().title()}"
-        categoria = "Alimentação"  # Podemos melhorar isso depois
+        categoria = "Alimentação"  
         data = datetime.today().strftime("%d/%m/%Y")
         
         return descricao, categoria, valor, data
